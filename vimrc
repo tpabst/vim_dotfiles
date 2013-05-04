@@ -34,10 +34,8 @@ set laststatus=2
 "nnoremap <silent> <C-N> :noh<CR>
 
 
-"
-
-
-
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
