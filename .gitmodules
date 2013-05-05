@@ -49,3 +49,6 @@
 [submodule "bundle/awk-support"]
 	path = bundle/awk-support
 	url = /home/thomas/resources/tools/vim/awk-support_1.0
+[submodule "bundle/bash-support"]
+	path = bundle/bash-support
+	url = /home/thomas/resources/tools/vim/bash-support_3.12.1
