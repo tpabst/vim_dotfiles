@@ -7,8 +7,6 @@
 " Developpements  options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set cin				" c indentation
-set completeopt=menuone		" use a popup menu ti show the possible completions
-set completeopt+=longest	" Only insert the longest common text of the matches
 set ofu=syntaxcomplete#Complete
 set foldmethod=manual		" repli de code :help fold ou :help foldmethod
 set foldcolumn=2
@@ -28,7 +26,8 @@ let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
 let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+autocmd CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 set completeopt=menuone,menu,longest,preview
 "----------------------------------------------------------------------------
 
