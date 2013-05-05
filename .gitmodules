@@ -46,3 +46,6 @@
 [submodule "bundle/c-support"]
 	path = bundle/c-support
 	url = https://github.com/vim-scripts/c.vim.git
+[submodule "bundle/awk-support"]
+	path = bundle/awk-support
+	url = /home/thomas/resources/tools/vim/awk-support_1.0
