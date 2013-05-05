@@ -37,3 +37,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/dwm"]
+	path = bundle/dwm
+	url = https://github.com/spolu/dwm.vim
