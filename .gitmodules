@@ -67,3 +67,6 @@
 [submodule "bundle/clang"]
 	path = bundle/clang
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "bundlee/gccsense"]
+	path = bundlee/gccsense
+	url = http://cx4a.org/repo/gccsense.git
