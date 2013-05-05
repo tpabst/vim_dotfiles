@@ -76,3 +76,6 @@
 [submodule "bundle/omniCppCompletee"]
 	path = bundle/omniCppCompletee
 	url = https://github.com/vim-scripts/OmniCppComplete.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
