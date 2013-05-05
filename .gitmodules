@@ -70,3 +70,9 @@
 [submodule "bundlee/gccsense"]
 	path = bundlee/gccsense
 	url = http://cx4a.org/repo/gccsense.git
+[submodule "bundle/gcc"]
+	path = bundle/gcc
+	url = http://cx4a.org/repo/gcc.git
+[submodule "bundle/omniCppCompletee"]
+	path = bundle/omniCppCompletee
+	url = https://github.com/vim-scripts/OmniCppComplete.git
