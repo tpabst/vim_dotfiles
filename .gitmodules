@@ -64,3 +64,6 @@
 [submodule "bundle/nqc-support"]
 	path = bundle/nqc-support
 	url = /home/thomas/resources/tools/vim/nqcvim_3.1
+[submodule "bundle/clang"]
+	path = bundle/clang
+	url = https://github.com/Rip-Rip/clang_complete.git
