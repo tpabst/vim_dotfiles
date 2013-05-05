@@ -52,3 +52,6 @@
 [submodule "bundle/bash-support"]
 	path = bundle/bash-support
 	url = /home/thomas/resources/tools/vim/bash-support_3.12.1
+[submodule "bundle/doxygen-support"]
+	path = bundle/doxygen-support
+	url = /home/thomas/resources/tools/vim/doxygen-support_2.2
