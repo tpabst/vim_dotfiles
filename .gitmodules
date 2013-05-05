@@ -58,3 +58,6 @@
 [submodule "bundle/latex-support"]
 	path = bundle/latex-support
 	url = /home/thomas/resources/tools/vim/latex-support_1.0
+[submodule "bundle/lua-support"]
+	path = bundle/lua-support
+	url = /home/thomas/resources/tools/vim/lua-support_1.1
