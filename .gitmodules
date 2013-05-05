@@ -61,3 +61,6 @@
 [submodule "bundle/lua-support"]
 	path = bundle/lua-support
 	url = /home/thomas/resources/tools/vim/lua-support_1.1
+[submodule "bundle/nqc-support"]
+	path = bundle/nqc-support
+	url = /home/thomas/resources/tools/vim/nqcvim_3.1
