@@ -11,7 +11,7 @@ set ofu=syntaxcomplete#Complete
 set foldmethod=manual		" repli de code :help fold ou :help foldmethod
 set foldcolumn=2
 
-"set errorformat^=%-G%f:%l:\ warning:%m
+set errorformat^=%-G%f:%l:\ warning:%m
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "----------------------------------------------------------------------------
@@ -26,6 +26,29 @@ let g:ycm_complete_in_strings = 1               " show menu inside string
 let g:ycm_collect_identifiers_from_comments_and_strings = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
 
+
+
+"----------------------------------------------------------------------------
+" OmniCppComplete
+"----------------------------------------------------------------------------
+" et OmniCpp_SelectFirstItem=2
+"let OmniCpp_NamespaceSearch = 1
+"let OmniCpp_GlobalScopeSearch = 1
+"let OmniCpp_ShowAccess = 1
+"let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+"let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+"let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+"let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+"let OmniCpp_ShowScopeInAbbr = 1
+"let OmniCpp_ShowPrototypeInAbbr = 1
+"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+"" automatically open and close the popup menu / preview window
+"autocmd CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"set completeopt=menuone,menu,longest,preview
+"----------------------------------------------------------------------------
+
+ 
 "----------------------------------------------------------------------------
 " TList configuration
 "----------------------------------------------------------------------------
@@ -34,17 +57,28 @@ let Tlist_Process_File_Always = 1  " activation permanente du plugin pour la bar
 let Tlist_Use_Right_Window = 1     " affiche les tags sur le côté droit de l'écran
 "----------------------------------------------------------------------------
 
-" Make
-"set makeprg=bear\ --\ make
 
 "----------------------------------------------------------------------------
 " get  tags
 "----------------------------------------------------------------------------
-"set tags=tags,$WORKSPACE/tags,~/.vim/tags/tags
-nnoremap <leader>ct :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
 set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/tao
+set tags+=~/.vim/tags/tao_idl
 set tags+=~/.vim/tags/
+set tags+=~/.vim/tags/cla_trt
+set tags+=~/.vim/tags/cla_com
+set tags+=~/.vim/tags/cla_visu
+set tags+=~/.vim/tags/qt_qtbase
+set tags+=~/.vim/tags/qt_qtscript
+set tags+=~/.vim/tags/qt_qttools
+set tags+=~/.vim/tags/qt_qtactiveqt
+set tags+=~/.vim/tags/qt_qtxmlpatterns
+set tags+=~/.vim/tags/qt_qtimageformats
+set tags+=~/.vim/tags/qt_qtsvg
+set tags+=~/.vim/tags/qt_qtmultimedia
+set tags+=~/.vim/tags/qt_qtquick1
+set tags+=~/.vim/tags/qt_qtquickcontrols
+set tags+=~/.vim/tags/qt_qtdeclarative
 ""----------------------------------------------------------------------------
 "############################################################################
 

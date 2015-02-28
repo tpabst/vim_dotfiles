@@ -25,7 +25,7 @@ hi NonText	ctermfg=105         ctermbg=None        cterm=Bold
 
 hi DiffText	ctermfg=11          ctermbg=235         cterm=None
 hi DiffAdd	ctermfg=2           ctermbg=235         cterm=None
-hi DiffChange	ctermfg=50          ctermbg=235         cterm=Bold
+hi DiffChange	ctermfg=50          ctermbg=235         cterm=None
 hi DiffDelete	ctermfg=1           ctermbg=235         cterm=None
 
 hi Constant	ctermfg=76          ctermbg=None        cterm=Bold

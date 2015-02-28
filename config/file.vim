@@ -23,11 +23,8 @@ autocmd BufNewFile,BufRead *.mak       set filetype=make
 autocmd FileType make :inoremap <buffer><silent><Space> <Space><c-o>:call MapSpaceInMakefile()<CR>
 autocmd BufNewFile,BufRead *.lsm       set filetype=make
 autocmd BufNewFile,BufRead *_rc        set filetype=cfg
-autocmd BufNewFile,BufRead *.conf      set filetype=cfg
 autocmd BufNewFile,BufRead *.txt       set filetype=asciidoc
-autocmd BufNewFile,BufRead CMakeLists.txt       set filetype=cmake
 autocmd BufNewFile,BufRead *.cst       set filetype=cpp
-autocmd BufNewFile,BufRead *.log       set filetype=log 
 autocmd BufNewFile,BufRead *.ui        set filetype=xml
 autocmd BufNewFile,BufRead *.tex       setlocal spell spelllang=fr
 autocmd BufNewFile,BufRead *.tex       set tw=100

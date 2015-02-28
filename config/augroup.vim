@@ -5,16 +5,16 @@
 augroup confluencewiki
     au!
     au BufRead,BufNewFile *.cow setfiletype confluencewiki
-augroup end
+augroup END
 augroup json
     au!
     au BufRead,BufNewFile *.json setfiletype json
-augroup end
+augroup END
 
 augroup jvms
     au!
     au filetype {java,scala} setlocal omnifunc=javacomplete#Complete
-augroup end
+augroup END
 
 augroup markdown
     au!
@@ -24,19 +24,20 @@ augroup markdown
     au syntax mason setlocal equalprg=perltidy omnifunc=PerlComplete
     au filetype mason setlocal keywordprg=perldoc\ -T\ -f
     au syntax {xml,xhtml,html,htm,erb} runtime ftplugin/xml.vim
-augroup end
+    au syntax *html* source ~/.vim/script/closetag.vim
+augroup END
 
 augroup javascript
     au!
     au filetype javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-augroup end
+augroup END
 
 augroup perl
     au!
     au syntax perl setlocal equalprg=perltidy omnifunc=PerlComplete
     au filetype perl setlocal keywordprg=perldoc\ -T\ -f
     au filetype perl syn include @perlDATA syntax/MojoliciousTemplate.vim
-augroup end
+augroup END
 
 augroup python
     au!
@@ -45,7 +46,7 @@ augroup python
     au filetype python let python_highlight_all=1
     " au filetype python call NeoComplCacheDisable()
     au BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-augroup end
+augroup END
 
 augroup ruby
     au!
@@ -56,23 +57,23 @@ augroup ruby
         au BufReadPre *.rb setlocal sw=2 ts=2 sw=2 sts=2 nu | let IndentStyle="ruby"
         au BufNewFile *.rb 0r ~/.vim/skeleton.rb | let IndentStyle = "ruby"
     endif
-augroup end
+augroup END
 
 augroup text
     au!
     au BufRead,BufNewFile *.txt setlocal ft=txt
     au BufRead,BufNewFile Makefile* setlocal noexpandtab
-augroup end
+augroup END
 
 augroup xml
     au!
     au syntax xml setlocal equalprg=xmlindent\ -i\ 2\ -l\ 78
-augroup end
+augroup END
 
 augroup help
     au!
     au syntax help setlocal nu
-augroup end
+augroup END
 
 
 "
@@ -83,15 +84,11 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileWritePost * if &diff | colorscheme jellybeans | endif
-autocmd BufLeave * execute "set colorcolumn=" . join(range(91,355), ',')
-autocmd BufWinLeave * colorscheme jellybeans
-autocmd BufWrite * :call RemoveTrailingWhitespace()
-autocmd BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<CR>"
-"autocmd BufWritePost *.c,*.cpp,*.h,*.cst,*.py, silent! !ctags -R &
+au FileWritePost * if &diff | colorscheme thomas-256 | endif
+au BufWinLeave * colorscheme cs256d
+
+
+
+
+
 " EOF
-augroup LargeFile
-    autocmd BufReadPre * :call CheckLargeFile()
-augroup end
-
-

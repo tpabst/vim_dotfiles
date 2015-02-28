@@ -33,26 +33,20 @@ set nowrap          " pas de retour à la ligne automatique
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Coloration options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on			" activation de la coloration syntaxique
-"colorscheme cs256   	" jeu de couleur pour vim
-"colorscheme cs256d   	" jeu de couleur pour vim
-"colorscheme lucius
-"LuciusBlackLowContrast
-colorscheme jellybeans
 set t_Co=256                    " Allow 256 colors
 set background=dark	        " fond noir par défaut
-
+syntax on			" activation de la coloration syntaxique
+"colorscheme cs256   	" jeu de couleur pour vim
+colorscheme cs256d   	" jeu de couleur pour vim
 if &diff
-    "colorscheme thomas-256   	" jeu de couleur pour vim
-    "colorscheme jellybeans
-    execute "set colorcolumn="
-else
-    execute "set colorcolumn=" . join(range(91,355), ',')
+    colorscheme thomas-256   	" jeu de couleur pour vim
 endif
+set colorcolumn=100
 
-
+execute "set colorcolumn=" . join(range(101,355), ',')
 
 "au BufWinEnter * match OverLength /\%101v.\+/
+
 
 " Best color theme
 "mustang vitamins clue dante ir_black darkdevel oceanblack256 256-jungle charged-256
