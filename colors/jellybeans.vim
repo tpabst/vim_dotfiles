@@ -288,9 +288,10 @@ endfun
 " }}}
 
 if version >= 700
-  call s:X("CursorLine","","1c1c1c","","","")
-  call s:X("CursorColumn","","1c1c1c","","","")
-  call s:X("MatchParen","ffffff","80a090","bold","","")
+  call s:X("CursorLine","","262626","Bold","","")
+  call s:X("CursorColumn","","005f87","","","")
+  call s:X("ColorColumn","","080808","","","")
+  call s:X("MatchParen","ffffff","005f87","bold","","")
 
   call s:X("TabLine","000000","b0b8c0","italic","","Black")
   call s:X("TabLineFill","9098a0","","","","")
@@ -304,10 +305,10 @@ endif
 call s:X("Visual","","404040","","","")
 call s:X("Cursor","","b0d0f0","","","")
 
-call s:X("Normal","e8e8d3","151515","","White","")
-call s:X("LineNr","605958","151515","none","Black","")
-call s:X("Comment","888888","","italic","Grey","")
-call s:X("Todo","808080","","bold","","")
+call s:X("Normal","e8e8d3","292929","","White","")
+call s:X("LineNr","005f87","000000","none","Black","")
+call s:X("Comment","585858","","italic","Grey","")
+call s:X("Todo","af005f","121212","bold","","")
 
 call s:X("StatusLine","f0f0f0","101010","italic","","")
 call s:X("StatusLineNC","a0a0a0","181818","italic","","")
@@ -335,14 +336,17 @@ call s:X("PreProc","8fbfdc","","","LightBlue","")
 hi link Operator Normal
 
 call s:X("Type","ffb964","","","Yellow","")
-call s:X("NonText","808080","151515","","","")
+call s:X("NonText","808080","000000","","","")
 
-call s:X("SpecialKey","808080","343434","","","")
+call s:X("SpecialKey","808080","343434","Bold","","")
 
-call s:X("Search","f0a0c0","302028","underline","Magenta","")
+call s:X("Search","df005f","302028","Bold","Magenta","")
 
 call s:X("Directory","dad085","","","","")
-call s:X("ErrorMsg","","902020","","","")
+call s:X("ErrorMsg","d70000","121212","Bold","","")
+call s:X("Error","d70000","121212","Bold","","")
+call s:X("YcmErrorSection","d70000","262626","Bold","","")
+call s:X("YcmErrorSign","d70000","000000","Bold","","")
 hi link Error ErrorMsg
 
 " Diff
@@ -352,10 +356,10 @@ hi link diffAdded String
 
 " VimDiff
 
-call s:X("DiffAdd","","032218","","Black","DarkGreen")
-call s:X("DiffChange","","100920","","Black","DarkMagenta")
-call s:X("DiffDelete","220000","220000","","DarkRed","DarkRed")
-call s:X("DiffText","","000940","","","DarkRed")
+call s:X("DiffAdd","005f00","1c1c1c","","Black","DarkGreen")
+call s:X("DiffChange","00afff","1c1c1c","","Black","DarkMagenta")
+call s:X("DiffDelete","800000","1c1c1c","","DarkRed","DarkRed")
+call s:X("DiffText","af005f","1c1c1c","","","DarkRed")
 
 " PHP
 

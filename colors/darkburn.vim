@@ -153,6 +153,7 @@ if &t_Co > 255
     hi Exception       ctermfg=249   cterm=bold
     hi Float           ctermfg=251  
     hi FoldColumn      ctermfg=109   ctermbg=238    
+	hi ColorColumn     cterm=NONE    ctermfg=NONE    ctermbg=233
     hi Folded          ctermfg=109   ctermbg=238    
     hi Function        ctermfg=228  
     hi Identifier      ctermfg=223  

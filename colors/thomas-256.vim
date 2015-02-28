@@ -20,9 +20,14 @@ hi Search	ctermfg=125         ctermbg=None        cterm=Bold
 hi Type		ctermfg=166         ctermbg=None        cterm=Bold
 hi Statement	ctermfg=172         ctermbg=None        cterm=Bold
 hi Comment	ctermfg=240         ctermbg=None        cterm=None
-hi LineNr	ctermfg=244         ctermbg=233         cterm=None
+hi LineNr	ctermfg=244         ctermbg=232         cterm=None
 hi NonText	ctermfg=105         ctermbg=None        cterm=Bold
-hi DiffText	ctermfg=165         ctermbg=244         cterm=None
+
+hi DiffText	ctermfg=11          ctermbg=235         cterm=None
+hi DiffAdd	ctermfg=2           ctermbg=235         cterm=None
+hi DiffChange	ctermfg=50          ctermbg=235         cterm=Bold
+hi DiffDelete	ctermfg=1           ctermbg=235         cterm=None
+
 hi Constant	ctermfg=76          ctermbg=None        cterm=Bold
 hi Number       ctermfg=darkred     ctermbg=None        cterm=Bold
 hi String       ctermfg=darkblue                        "cterm=Bold
@@ -38,16 +43,17 @@ hi Folded       ctermfg=132         ctermbg=None        cterm=Bold
 
 hi Visual       ctermfg=248         ctermbg=238         cterm=None
 
-hi Pmenu        ctermfg=62          ctermbg=233         cterm=None
+hi Pmenu        ctermfg=62          ctermbg=232         cterm=None
 hi PmenuSel     ctermfg=69          ctermbg=232         cterm=Bold
-hi PmenuSbar    ctermfg=247         ctermbg=233         cterm=Bold
-hi PmenuThumb   ctermfg=248         ctermbg=233         cterm=None
+hi PmenuSbar    ctermfg=247         ctermbg=232         cterm=Bold
+hi PmenuThumb   ctermfg=248         ctermbg=232         cterm=None
 
-hi StatusLineNC ctermfg=248         ctermbg=239         cterm=None
-hi StatusLine   ctermfg=39          ctermbg=239         cterm=None
-hi VertSplit    ctermfg=239         ctermbg=239         cterm=None
+hi StatusLineNC ctermfg=248         ctermbg=232         cterm=None
+hi StatusLine   ctermfg=39          ctermbg=232         cterm=None
+hi VertSplit    ctermfg=232         ctermbg=232         cterm=None
 
-hi TabLine      ctermfg=245         ctermbg=239         cterm=None
-hi TabLineFill  ctermfg=239         ctermbg=239
-hi TabLineSel   ctermfg=104         ctermbg=236         cterm=Bold
-"vim: sw=4
+hi TabLine      ctermfg=6           ctermbg=232         cterm=None
+hi TabLineFill  ctermfg=232         ctermbg=232         cterm=none
+hi TabLineSel   ctermfg=6           ctermbg=232         cterm=Bold
+hi ColorColumn  ctermbg=233         guibg=red          cterm=none
+"hi OverLength   ctermbg=red 

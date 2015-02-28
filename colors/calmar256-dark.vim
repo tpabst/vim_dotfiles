@@ -44,15 +44,16 @@ set cpo&vim
 " EDIT/ADD style/colors below
  
 let s:colors256 = [ 
-            \ ["Normal",        "NONE", "41",   "232"   ],
-            \ ["Cursor",        "NONE", "255", "33"  ],
-            \ ["CursorLine",    "NONE", "NONE", "233"   ],
-            \ ["CursorColumn",  "NONE", "NONE", "233"   ],
+            \ ["Normal",        "NONE", "41",   "233"   ],
+            \ ["Cursor",        "NONE", "255", "33"     ],
+            \ ["CursorLine",    "NONE", "NONE", "234"   ],
+            \ ["CursorColumn",  "NONE", "NONE", "234"   ],
+		    \ ["ColorColumn" ,  "NONE", "NONE",  232    ],
             \ ["Incsearch",     "BOLD", "195",  "124"   ],
             \ ["Search",        "NONE", "NONE", "52"    ],
             \ ["ErrorMsg",      "BOLD", "16",   "202"   ],
             \ ["WarningMsg",    "BOLD", "16",   "190"   ],
-            \ ["ModeMsg",       "NONE", "226",   "18"    ],
+            \ ["ModeMsg",       "NONE", "226",   "18"   ],
             \ ["MoreMsg",       "BOLD", "16",   "154"   ],
             \ ["Question",      "BOLD", "70",   "NONE"  ],
             \ ["StatusLine",    "NONE", "190",  "22"    ],

@@ -179,6 +179,7 @@ else
     endif
 
 
+	exec "hi ColorColumn    cterm=NONE   ctermfg=NONE  ctermbg=234"
     exec "hi Cursor         cterm=BOLD   ctermfg=255   ctermbg=167"
     exec "hi CursorIM       cterm=BOLD   ctermfg=255   ctermbg=167"
 

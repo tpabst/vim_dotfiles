@@ -1,0 +1,16 @@
+tags/cla_cfg
+tags/cla_com
+tags/cla_trt
+tags/cla_visu
+tags/cpp
+tags/qt
+tags/tao
+.netrwhist
+bundle/bash-support/doc/tags-te
+bundle/bufexplorer/doc/tags
+bundle/syntastic/doc/tags
+bundle/bash-support/doc/tags
+bundle/fugitive/doc/tags
+*.pyc
+*.swp
+*~
